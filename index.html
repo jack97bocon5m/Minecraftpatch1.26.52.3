@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghi chú Minecraft</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      text-align: center;
+    }
+
+    .page {
+      min-height: 100vh;
+      padding: 50px 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .note {
+      background: #222;
+      border-radius: 15px;
+      padding: 25px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    a, button {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 15px 0;
+      padding: 15px;
+      border: 0;
+      border-radius: 10px;
+      background: #2d7dff;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    a:hover, button:hover {
+      opacity: 0.85;
+    }
+
+    #page2 {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TRANG 1 -->
+  <div id="page1" class="page">
+    <div class="note">
+      <h1>📝 Ghi chú</h1>
+
+      <h2>Minecraft</h2>
+
+      <a href="https://www.mediafire.com/file/b9q41z40e7g10d9/MC_Patch_1-26-52-3_64%252632bit.apk/file"
+         target="_blank">
+        Nhấp vào đây để tải Minecraft
+      </a>
+
+      <button onclick="showPage2()">
+        Sang trang 2
+      </button>
+    </div>
+  </div>
+
+
+  <!-- TRANG 2 -->
+  <div id="page2" class="page">
+    <div class="note">
+      <h1>Trang 2</h1>
+      <h2>Các liên kết</h2>
+
+      <a href="https://linktaisunwin.online/vn/" target="_blank">
+        Sunwin
+      </a>
+
+      <a href="https://dagatructiep.business/" target="_blank">
+        Thomo
+      </a>
+
+      <a href="https://caferadio.com.co/vi-vn/" target="_blank">
+        Vn88
+      </a>
+
+      <a href="https://fun88yeti5.com/" target="_blank">
+        Fun88
+      </a>
+
+      <a href="https://klassif.io/vi-vn/" target="_blank">
+        W88
+      </a>
+
+      <button onclick="showPage1()">
+        Quay lại
+      </button>
+    </div>
+  </div>
+
+
+  <script>
+    function showPage2() {
+      document.getElementById("page1").style.display = "none";
+      document.getElementById("page2").style.display = "block";
+    }
+
+    function showPage1() {
+      document.getElementById("page2").style.display = "none";
+      document.getElementById("page1").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
